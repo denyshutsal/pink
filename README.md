@@ -4,6 +4,18 @@
 
 ---
 
+## Chrome Lighthouse Audit метрики
+
+Desktop
+
+![Desktop Lighthouse Audit in Chrome DevTools](https://github.com/denyshutsal/pink/blob/master/source/img/lighthouse-audit-chrome-devtools-desktop.PNG)
+
+Mobile
+
+![Mobile Lighthouse Audit in Chrome DevTools](https://github.com/denyshutsal/pink/blob/master/source/img/lighthouse-audit-chrome-devtools-mobile.PNG)
+
+---
+
 ## Установка
 
 Требуются установленный [git](https://git-scm.com/) и [Node.js (LTS)](https://nodejs.org/en/).
