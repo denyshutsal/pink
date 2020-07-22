@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Скачайте приложение Pink — это сервис, позволяющий легко и удобно снимать креативные фото и видео, редактировать их, а также делиться ими с друзьями и родственниками.">
+  <!-- <meta name="keywords" content=""> -->
+  <title>Pink — Главная</title>
+
+  <!-- Favicon icons-->
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="vendor/swiper.min.css">
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!--Scripts-->
+  <!--https://scottjehl.github.io/picturefill/-->
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement('picture');
+  </script>
+  <script src="vendor/picturefill.min.js" async></script>
+</head>
+
+<body class="page">
+  <!--begin SVG sprite-->
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="visuallyhidden">
+    <symbol id="microsoft-store" viewBox="0 0 43.9 42">
+      <path fill="#F05423" d="M20.9 20H0V0h20.9v20z" />
+      <path fill="#84C441" d="M43.9 20H23V0h20.9v20z" />
+      <path fill="#2DABE2" d="M20.9 42H0V22h20.9v20z" />
+      <path fill="#F9BC15" d="M43.9 42H23V22h20.9v20z" />
+    </symbol>
+    <symbol id="google-store" viewBox="0 0 42.1 47">
+      <path fill="#A4C639"
+        d="M34.1 14H7.9v19.1c0 1.9 1.5 3.5 3.3 3.6v7.4c0 1.6 1.3 2.9 2.9 2.9 1.6 0 2.9-1.3 2.9-2.9v-7.4h8.1v7.4c0 1.6 1.3 2.9 2.9 2.9 1.6 0 2.9-1.3 2.9-2.9v-7.4c1.9-.1 3.3-1.7 3.3-3.6V14.3c0-.1 0-.2-.1-.3zM2.9 15.7c1.6 0 2.9 1.3 2.9 2.9V31c0 1.6-1.3 2.9-2.9 2.9C1.3 33.9 0 32.6 0 31V18.6c0-1.6 1.3-2.9 2.9-2.9zM39.2 15.7c1.6 0 2.9 1.3 2.9 2.9V31c0 1.6-1.3 2.9-2.9 2.9-1.6 0-2.9-1.3-2.9-2.9V18.6c0-1.6 1.3-2.9 2.9-2.9zM8 12h26c0-2.8-1.2-5.3-3.2-7.3L33.2.5c.1-.1 0-.3-.1-.4-.1-.1-.3 0-.4.1l-2.4 4.1C28.2 2.4 24.1.9 20.9.9c-3 0-7.3 1.5-9.4 3.4L9.3.2C9.2 0 9 0 8.9 0c-.2.1-.2.3-.1.5l2.4 4.2C9.3 6.6 8.1 9.2 8 12zm17.3-5.2c0-.8.7-1.5 1.5-1.5s1.5.6 1.5 1.5c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5zm-11.1 0c0-.8.7-1.5 1.5-1.5s1.5.6 1.5 1.5c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5z" />
+    </symbol>
+    <symbol id="apple-store" viewBox="0 0 46.2 56.8">
+      <path fill="#FFF"
+        d="M38.6 30.1c.1 8.6 7.5 11.4 7.6 11.5-.1.2-1.2 4.1-3.9 8.1-2.4 3.5-4.8 6.9-8.7 7-3.8.1-5-2.3-9.4-2.3-4.3 0-5.7 2.2-9.3 2.3-3.7.1-6.6-3.7-9-7.2-4.9-7-8.6-19.9-3.6-28.6 2.5-4.3 6.9-7 11.7-7.1 3.7-.1 7.1 2.5 9.4 2.5 2.2 0 6.4-3 10.9-2.6 1.9.1 7 .7 10.4 5.6-.2.2-6.2 3.7-6.1 10.8m-7.1-21c2-2.4 3.3-5.7 3-9.1-2.9.1-6.3 1.9-8.4 4.3-1.8 2.1-3.4 5.5-3 8.8 3.1.2 6.4-1.6 8.4-4" />
+    </symbol>
+    <symbol id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 19">
+      <path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7z" />
+    </symbol>
+    <symbol id="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15">
+      <path
+        d="M11.3.2C13-.3 14.4.4 15 1.3c.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1C1.8 8.1.4 7.4.5 5.2c.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7C8.5 2.3 9.5.8 11.3.2z" />
+    </symbol>
+    <symbol id="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 14">
+      <path d="M1.8 13.8c-1 .5-1.8 0-1.8-1.1V1.3C0 .2.8-.3 1.8.2l12.1 5.9c1 .5 1 1.3 0 1.7l-12.1 6z" />
+    </symbol>
+  </svg>
+  <!--end SVG sprite-->
+
+  <!-- page-header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <div class="logo-wrapper">
+          <a class="logo" href="index.html" aria-label="Pink. Перейти на главную страницу">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/svg/logo-big.svg">
+              <img class="logo__image" src="img/svg/logo-small.svg" width="75" height="22" alt="Логотип">
+            </picture>
+          </a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Показать меню">
+          <span class="hamburger"></span>
+        </button>
+
+        <nav class="main-nav page-header__nav" aria-label="main menu">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link main-nav__link--active">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#advantages" class="main-nav__link">Преимущества</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#plans" class="main-nav__link">Тарифы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contacts" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- page-header -->
+
+  <!-- content-wrapper has javascript state! -->
+  <div class="content-wrapper">
+    <!-- hero -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__banner">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/webp/hand-big.webp 1x, img/webp/hand-big@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/webp/hand-medium.webp 1x, img/webp/hand-medium@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/hand-small.webp 1x, img/webp/hand-small@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/hand-big.png 1x, img/hand-big@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/hand-medium.png 1x, img/hand-medium@2x.png 2x">
+              <img class="hero__img" src="img/hand-small.png" srcset="img/hand-small@2x.png 2x"
+                alt="результат обработки фотографии">
+            </picture>
+          </div>
+
+          <div class="hero__info">
+            <h1 class="hero__title hero__title--rainbow">
+              Взгляните на жизнь иначе!
+            </h1>
+            <a class="btn btn--rounded hero__btn" href="#" role="button">Скачать приложение</a>
+            <ul class="download hero__list">
+              <li class="download__item">
+                <a href="#" class="download__link" target="_blank" rel="noopener noreferrer" aria-label="App Store">
+                  <svg class="icon icon--apple-store" width="46" height="57" xmlns="http://www.w3.org/2000/svg"
+                    role="img">
+                    <use xlink:href="#apple-store"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="download__item">
+                <a href="#" class="download__link" target="_blank" rel="noopener noreferrer" aria-label="Google Play">
+                  <svg class="icon icon--google-store" width="42" height="47" xmlns="http://www.w3.org/2000/svg"
+                    role="img">
+                    <use xlink:href="#google-store"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="download__item">
+                <a href="#" class="download__link" target="_blank" rel="noopener noreferrer"
+                  aria-label="Microsoft Store">
+                  <svg class="icon icon--microsoft-store" width="44" height="42" xmlns="http://www.w3.org/2000/svg"
+                    role="img">
+                    <use xlink:href="#microsoft-store"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="hero__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
+              8
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero -->
+
+    <!-- advantages -->
+    <section id="advantages" class="advantages">
+      <div class="advantages__inner">
+        <div class="advantages__header">
+          <div class="advantages__header-inner">
+            <h2 class="advantages__header-title advantages__header-title--top">
+              Устали от серости мегаполиса?
+            </h2>
+            <h2 class="advantages__header-title">
+              Нам есть, что вам <br>
+              предложить!
+            </h2>
+          </div>
+        </div>
+
+        <div class="advantages__main">
+          <div class="advantages__main-wrapper">
+            <div class="advantages__main-top">
+              <div class="advantages__main-inner">
+                <div class="advantages__main-img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/webp/iphone-big-1.webp 1x, img/webp/iphone-big-1@2x.webp 2x">
+
+                    <img class="advantages__main-img" src="img/iphone-big-1.png" srcset="img/iphone-big-1@2x.png 2x"
+                      alt="Поднимает настроение">
+                  </picture>
+                </div>
+                <h3 class="advantages__main-title">
+                  Поднимает настроение
+                </h3>
+                <p class="advantages__main-text">
+                  Приложение позволит вам победить осеннюю хандру и депрессию
+                  буквально в несколько кликов!
+                </p>
+              </div>
+
+              <div class="advantages__main-inner">
+                <div class="advantages__main-img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/webp/iphone-big-2.webp 1x, img/webp/iphone-big-2@2x.webp 2x">
+
+                    <img class="advantages__main-img" src="img/iphone-big-2.png" srcset="img/iphone-big-2@2x.png 2x"
+                      alt="Поднимает настроение">
+                  </picture>
+                </div>
+                <h3 class="advantages__main-title">
+                  Меняет мир вокруг
+                </h3>
+                <p class="advantages__main-text">
+                  Сделайте снимок и украсьте его смайликом или текстовой
+                  подписью, чтобы усилить эффект
+                </p>
+              </div>
+
+              <div class="advantages__main-inner">
+                <div class="advantages__main-img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/webp/iphone-big-3.webp 1x, img/webp/iphone-big-3@2x.webp 2x">
+
+                    <img class="advantages__main-img" src="img/iphone-big-3.png" srcset="img/iphone-big-3@2x.png 2x"
+                      alt="Поднимает настроение">
+                  </picture>
+                </div>
+                <h3 class="advantages__main-title">
+                  Заводит новых друзей
+                </h3>
+                <p class="advantages__main-text">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с
+                  друзьями и заводите новых
+                </p>
+              </div>
+            </div>
+
+            <div class="advantages__main-bottom">
+              <picture>
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/webp/iphone-medium.webp 1x, img/webp/iphone-medium@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/iphone-small.webp 1x, img/webp/iphone-small@2x.webp 2x">
+
+                <source media="(min-width: 660px)" srcset="img/iphone-medium.png 1x, img/iphone-medium@2x.png 2x">
+                <img class="advantages__main-bottom-img" src="img/iphone-small.png" srcset="img/iphone-small@2x.png 2x"
+                  alt="iphone">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages__footer">
+          <div class="advantages__footer-inner">
+            <div class="advantages__footer-img">
+              <span class="advantages__footer-img-text">24</span>
+            </div>
+            <div class="advantages__footer-info">
+              <h3 class="advantages__footer-title">
+                Эффект на 24 часа!
+              </h3>
+              <p class="advantages__footer-text">
+                Британские ученые провели исследования и доказали, что
+                положительный эффект от использования приложения длится целые
+                сутки!
+              </p>
+              <a class="advantages__footer-link" href="#" target="_blank" rel="noopener noreferrer">Узнать больше об
+                исследовании
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- advantages -->
+
+    <!-- reviews -->
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2 class="swiper-slide__title">
+                Николай Петров
+              </h2>
+              <p class="swiper-slide__text">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со
+                своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="swiper-slide__title">
+                Сергей Даниленко
+              </h2>
+              <p class="swiper-slide__text">
+                «Прекрасное приложение, было куплено на яблокофоне. Сегодня
+                куплю и на андроид - лучшее в своём роде. Только отсутствие
+                русского перевода очень сильно огорчает.»
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="swiper-slide__title">
+                Андрей Александрович
+              </h2>
+              <p class="swiper-slide__text">
+                «Оформление, конечно, на очень высоком уровне, пусть и
+                по-английски, но вот показывает не то, что надо, точнее, не
+                там, где находится объект. Например,наводишь на Луну, а в
+                экране её не видно. Появляется только тогда, когда
+                поворачиваешься в правую сторону почти на 90° примерно на том
+                же уровне(высоте). Если уж Луну не правильно показывает, то
+                что говорить о других телах?»
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!-- reviews -->
+
+    <!-- plans -->
+    <section id="plans" class="plans">
+      <div class="container">
+        <div class="plans__inner">
+          <ul class="plans__list">
+            <li class="plans__item plans__item--1">
+              <div class="plans__item-header">
+                <h3 class="plans__title">база</h3>
+                <span class="plans__cost">1,99</span>
+                <span class="plans__currency">usd</span>
+                <span class="plans__label plans__label--hidden">хит</span>
+              </div>
+
+              <p class="plans__text plans__text--1">
+                Розовый фильтр
+                <img class="plans__img plans__img--yes" src="img/svg/yes-icon.svg" width="31" height="21" alt="да">
+                <img class="plans__img plans__img--no plans__img--hidden" src="img/svg/no-icon.svg" width="27"
+                  height="26" alt="нет">
+              </p>
+
+              <p class="plans__text plans__text--2">
+                Смайлики
+                <img class="plans__img plans__img--yes plans__img--hidden" src="img/svg/yes-icon.svg" width="31"
+                  height="21" alt="да">
+                <img class="plans__img plans__img--no" src="img/svg/no-icon.svg" width="27" height="26" alt="нет">
+              </p>
+
+              <p class="plans__text plans__text--3">
+                Комментарии
+                <img class="plans__img plans__img--yes plans__img--hidden" src="img/svg/yes-icon.svg" width="31"
+                  height="21" alt="да">
+                <img class="plans__img plans__img--no" src="img/svg/no-icon.svg" width="27" height="26" alt="нет">
+              </p>
+            </li>
+
+            <li class="plans__item plans__item--2">
+              <div class="plans__item-header">
+                <h3 class="plans__title">стандарт</h3>
+                <span class="plans__cost">3,99</span>
+                <span class="plans__currency">usd</span>
+                <span class="plans__label">хит</span>
+              </div>
+
+              <p class="plans__text plans__text--4">
+                Розовый фильтр
+                <img class="plans__img plans__img--yes" src="img/svg/yes-icon.svg" width="31" height="21" alt="да">
+                <img class="plans__img plans__img--hidden plans__img--no" src="img/svg/no-icon.svg" width="27"
+                  height="26" alt="нет">
+              </p>
+
+              <p class="plans__text plans__text--5">
+                Смайлики
+                <img class="plans__img plans__img--yes" src="img/svg/yes-icon.svg" width="31" height="21" alt="да">
+                <img class="plans__img plans__img--no plans__img--hidden" src="img/svg/no-icon.svg" width="27"
+                  height="26" alt="нет">
+              </p>
+
+              <p class="plans__text plans__text--6">
+                Комментарии
+                <img class="plans__img plans__img--yes plans__img--hidden" src="img/svg/yes-icon.svg" width="31"
+                  height="21" alt="да">
+                <img class="plans__img plans__img--no" src="img/svg/no-icon.svg" width="27" height="26" alt="нет">
+              </p>
+            </li>
+
+            <li class="plans__item plans__item--3">
+              <div class="plans__item-header">
+                <h3 class="plans__title">анлим</h3>
+                <span class="plans__cost">9,99</span>
+                <span class="plans__currency">usd</span>
+                <span class="plans__label plans__label--hidden">хит</span>
+              </div>
+
+              <p class="plans__text plans__text--7">
+                Розовый фильтр
+                <img class="plans__img plans__img--yes" src="img/svg/yes-icon.svg" width="31" height="21" alt="да">
+                <img class="plans__img plans__img--hidden plans__img--no" src="img/svg/no-icon.svg" width="27"
+                  height="26" alt="нет">
+              </p>
+
+              <p class="plans__text plans__text--8">
+                Смайлики
+                <img class="plans__img plans__img--yes" src="img/svg/yes-icon.svg" width="31" height="21" alt="да">
+                <img class="plans__img plans__img--hidden plans__img--no" src="img/svg/no-icon.svg" width="27"
+                  height="26" alt="нет">
+              </p>
+
+              <p class="plans__text plans__text--9">
+                Комментарии
+                <img class="plans__img plans__img--yes" src="img/svg/yes-icon.svg" width="31" height="21" alt="да">
+                <img class="plans__img plans__img--hidden plans__img--no" src="img/svg/no-icon.svg" width="27"
+                  height="26" alt="нет">
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- plans -->
+
+    <!-- contacts -->
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <div class="contacts__inner">
+          <h2 class="contacts__title">
+            Остались вопросы?<br>
+            Свяжитесь с нами!
+          </h2>
+
+          <div class="contacts__main">
+            <div class="contacts__wrapper contacts__wrapper--1">
+              <p class="contacts__text">Звоните:</p>
+              <a class="contacts__link" href="tel:+78125556666" rel="nofollow">
+                +7 (812) 555-66-66
+              </a>
+            </div>
+
+            <div class="contacts__wrapper contacts__wrapper--2">
+              <p class="contacts__text">Пишите:</p>
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </div>
+
+            <div class="contacts__wrapper contacts__wrapper--3">
+              <p class="contacts__text">Приезжайте в гости:</p>
+              <address class="contacts__text2">
+                ул. Большая<br>
+                Конюшенная, 19/8
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contacts -->
+
+    <!-- map -->
+    <section id="map" class="map">
+      <h2 class="visuallyhidden">Мы на карте</h2>
+      <noscript class="loading-lazy">
+        <iframe class="map__iframe" title="Мы на карте"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1590560117934!5m2!1sru!2sua"
+          height="200" loading="lazy" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </noscript>
+    </section>
+    <!-- map -->
+
+    <!-- footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__inner">
+          <div class="page-footer__wrapper">
+            <a class="logo2" href="index.html" aria-label="Pink. Перейти на главную страницу">
+              <noscript class="loading-lazy">
+                <img class="logo2__image" src="img/svg/logo2-big.svg" loading="lazy" width="147" height="40"
+                  alt="Логотип">
+              </noscript>
+            </a>
+          </div>
+
+          <div class="page-footer__wrapper">
+            <div class="socials">
+              <a class="socials__link socials__link--twitter" href="#" target="_blank" rel="noopener noreferrer"
+                aria-label="Twitter">
+                <noscript class="loading-lazy">
+                  <img class="socials__icon" src="img/svg/twitter.svg" alt="Twitter-иконка" loading="lazy" width="18"
+                    height="15">
+                </noscript>
+              </a>
+              <a class="socials__link socials__link--facebook" href="#" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
+                <noscript class="loading-lazy">
+                  <img class="socials__icon" src="img/svg/facebook.svg" alt="Facebook-иконка" loading="lazy" width="9"
+                    height="19">
+                </noscript>
+              </a>
+              <a class="socials__link socials__link--youtube" href="#" target="_blank" rel="noopener noreferrer"
+                aria-label="Youtube">
+                <noscript class="loading-lazy">
+                  <img class="socials__icon" src="img/svg/youtube.svg" alt="Youtube-иконка" loading="lazy" width="15"
+                    height="14">
+                </noscript>
+              </a>
+            </div>
+          </div>
+
+          <div class="page-footer__wrapper">
+            <div class="author">
+              <a class="author__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Author-link">
+                <span class="author__text">Разработано</span>
+                <noscript class="loading-lazy">
+                  <img class="author__icon" src="img/svg/html-academy.svg" alt="логотип разработчика" loading="lazy"
+                    width="27" height="34">
+                </noscript>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </div>
+  <!-- content-wrapper has javascript state! -->
+
+  <!-- GDPRP (General data protection regulation) -->
+  <!-- GDPR panel ru -->
+  <div class="gdpr-panel">
+    <div class="gdpr-panel__text">
+      Мы используем куки!
+      <a class="gdpr-panel__link" href="gdpr-ru.html" target="_blank" rel="noopener noreferrer">
+        Что это значит?
+      </a>
+    </div>
+
+    <button type="button" class="gdpr-panel__dismiss-btn" aria-label="Закрыть предупреждение">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="gdpr-panel__img"
+        width="18" height="18" viewBox="0 0 18 18">
+        <path fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="1.5" vector-effect="non-scaling-stroke" d="M2 2l14 14M16 2L2 16"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- GDPR panel ru -->
+
+  <!-- GDPR panel en-->
+  <!-- <div class="gdpr-panel">
+    <div class="gdpr-panel__text">
+      WE USE COOKIES! <a class="gdpr-panel__link" href="gdpr-en.html" target="_blank" rel="noopener noreferrer">
+        WHAT DOES THAT MEAN?
+      </a>
+    </div>
+
+    <button type="button" class="gdpr-panel__dismiss-btn" aria-label="Close warning"><svg
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="gdpr-panel__img" width="18"
+        height="18" viewBox="0 0 18 18">
+        <path fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="1.5" vector-effect="non-scaling-stroke" d="M2 2l14 14M16 2L2 16"></path>
+      </svg></button>
+  </div> -->
+  <!-- GDPR panel en-->
+
+  <script src="vendor/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
