@@ -1,0 +1,182 @@
+/* ==========================================================================
+plans
+========================================================================== */
+
+.plans {
+  padding: 80px 0 40px;
+  background-color: #f2f2f2;
+  background-image: url('../img/svg/background-triangle-white.svg');
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 100% 35px;
+
+  @include min-width(md) {
+    padding: 100px 0 50px;
+  }
+
+  @include min-width(xl) {
+    padding: 140px 0 70px;
+    background-size: 100% 70px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    @include reset-list;
+
+    @include min-width(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    z-index: 5;
+    top: 5px;
+    left: -24px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0;
+    background-color: $plans--label-background-color;
+    color: $plans--label-color;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.14286;
+    transform: rotate(-0.12turn);
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    @include line-height-px-to-unitless(14px, 30px);
+  }
+
+  &__item {
+    width: 100%;
+    border: $plans--item-border;
+    margin-bottom: 30px;
+    background-color: $plans--item-background-color;
+    border-radius: 5px;
+    text-align: $plans--item-text-align;
+    text-transform: uppercase;
+    transition: border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-color: $plans--item-hover-border-color;
+    }
+
+    &:hover .plans__label {
+      background-color: $plans--item-hover-label-background-color;
+    }
+
+    @include min-width(md) {
+      width: 33.333%;
+      max-width: 350px;
+    }
+  }
+
+  &__item-header {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    background-color: $plans--item-header-background-color;
+    border-radius: 5px 5px 0 0;
+    text-align: $plans--item-header-text-align;
+  }
+
+  &__title {
+    margin: 0;
+    color: $plans--item-title-color;
+    font-family: inherit;
+    font-size: $plans--item-title-font-size;
+    font-weight: 800;
+
+    @include line-height-px-to-unitless(16px, 30px);
+  }
+
+  &__cost {
+    margin: 0;
+    color: $plans--cost-color;
+    font-family: inherit;
+    font-size: $plans--cost-font-size;
+    font-weight: 400;
+
+    @include line-height-px-to-unitless(18px, 30px);
+  }
+
+  &__currency {
+    margin: 0;
+    color: $plans--currency-color;
+    font-family: inherit;
+    font-size: $plans--currency-font-size;
+    font-weight: 400;
+
+    @include line-height-px-to-unitless(18px, 30px);
+  }
+
+  &__label--hidden {
+    display: none;
+  }
+
+  &__text {
+    position: relative;
+    padding: 15px;
+    padding-right: 60px;
+    border-bottom: $plans--text-border-bottom;
+    margin: 0;
+    color: $plans--text-color;
+    font-family: inherit;
+    font-size: $plans--text-font-size;
+    font-weight: 400;
+
+    @include line-height-px-to-unitless(14px, 23px);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    @include min-width(md) {
+      text-transform: $plans--text-text-transform-md;
+    }
+
+    @include min-width(xl) {
+      font-size: $plans--text-font-size-xl;
+
+      @include line-height-px-to-unitless(18px, 30px);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(-50%, -50%);
+  }
+
+  &__img--hidden {
+    display: none;
+  }
+
+  &__img--yes {
+    width: 31px;
+    height: 21px;
+  }
+
+  &__img--no {
+    width: 32px;
+    height: 26px;
+  }
+}

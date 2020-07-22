@@ -1,0 +1,236 @@
+/* ==========================================================================
+hero
+========================================================================== */
+
+.hero {
+  background-color: $hero--background-color;
+  background-image: $hero--background-image;
+  background-position: $hero--background-position;
+  background-repeat: no-repeat;
+  background-size: $hero--background-size;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: $hero--background-image-retina;
+  }
+
+  @include min-width(md) {
+    background-image: $hero--background-image-md;
+    background-size: $hero--background-size-md;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: $hero--background-image-md-retina;
+    }
+  }
+
+  @include min-width(xl) {
+    background-image: $hero--background-image-xl;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: $hero--background-image-xl-retina;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+
+    @include min-width(md) {
+      height: 730px;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-bottom: 0;
+    }
+
+    @include min-width(xl) {
+      height: 850px;
+    }
+  }
+
+  &__banner {
+    position: absolute;
+    z-index: 200;
+    top: 132px;
+    left: 50%;
+    display: flex;
+    width: 280px;
+    height: 330px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-50%);
+
+    @include min-width(md) {
+      top: auto;
+      bottom: 0;
+      left: 55%;
+      width: 477px;
+      height: 545px;
+      transform: translateX(-45%);
+    }
+
+    @include min-width(xl) {
+      left: 35%;
+      width: 570px;
+      height: 645px;
+      transform: none;
+    }
+  }
+
+  &__img {
+    max-width: 280px;
+    max-height: 330px;
+
+    @include min-width(md) {
+      max-width: 477px;
+      max-height: 545px;
+    }
+
+    @include min-width(xl) {
+      max-width: 570px;
+      max-height: 645px;
+    }
+  }
+
+  &__info {
+    z-index: 300;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 462px;
+
+    @include min-width(md) {
+      width: 45%;
+      padding-top: 50px;
+    }
+
+    @include min-width(xl) {
+      width: 30%;
+    }
+  }
+
+  &__title {
+    display: none;
+
+    @include min-width(md) {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0;
+      margin-bottom: 40px;
+      color: $hero--title-md-color;
+      font-family: inherit;
+      font-size: $hero--title-md-font-size;
+      font-weight: $hero--title-md-font-weight;
+      text-align: $hero--title-md-text-align;
+
+      @include line-height-px-to-unitless(40px, 46px);
+    }
+
+    @include min-width(xl) {
+      margin-bottom: 50px;
+      font-size: $hero--title-xl-font-size;
+
+      @include line-height-px-to-unitless(50px, 56px);
+    }
+  }
+
+  &__title--rainbow {
+    animation: $hero--title-xl-animation;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include min-width(md) {
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+
+    @include min-width(xl) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 240px;
+    margin: 0;
+    color: $hero--text-color;
+    font-family: inherit;
+    font-size: $hero--text-font-size;
+    font-weight: $hero--text-font-weight;
+    text-align: $hero--text-align;
+
+    @include line-height-px-to-unitless(14px, 24px);
+
+    @include min-width(md) {
+      width: 265px;
+      font-size: $hero--text-md-font-size;
+
+      @include line-height-px-to-unitless(16px, 24px);
+    }
+  }
+}
+
+.download {
+  @include reset-list;
+
+  display: flex;
+  width: 205px;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @include min-width(xl) {
+    margin-bottom: 40px;
+  }
+}
+
+.icon--app {
+  width: 46px;
+  height: 57px;
+}
+
+.icon--goog {
+  width: 42px;
+  height: 47px;
+}
+
+.icon--mic {
+  width: 44px;
+  height: 42px;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ea316d;
+  }
+
+  25% {
+    color: #823bc5;
+  }
+
+  50% {
+    color: #535efd;
+  }
+
+  75% {
+    color: #ffce60;
+  }
+
+  100% {
+    color: #ea316d;
+  }
+}

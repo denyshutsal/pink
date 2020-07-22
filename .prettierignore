@@ -1,0 +1,4 @@
+SNIPPETS/**/*
+bower_components
+node_modules
+source/css/

@@ -1,0 +1,102 @@
+/* ==========================================================================
+reviews
+========================================================================== */
+
+.reviews {
+  padding-bottom: 25px;
+  background-color: $reviews--background-color;
+
+  @include min-width(md) {
+    padding-bottom: 35px;
+  }
+
+  @include min-width(xl) {
+    padding-bottom: 45px;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  min-height: 250px;
+  padding: 40px 0;
+  background-image: $reviews--swiper-container-background-image;
+  background-position: $reviews--swiper-container-background-position;
+  background-repeat: no-repeat;
+  background-size: $reviews--swiper-container-background-size;
+
+  @include min-width(md) {
+    padding: 70px 0;
+    background-size: $reviews--swiper-container-background-size-md;
+  }
+}
+
+.swiper-slide {
+  @include min-width(md) {
+    padding: 0 40px;
+  }
+
+  @include min-width(xl) {
+    padding: 0 120px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: $reviews--title-color;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: $reviews--title-text-align;
+
+    @include line-height-px-to-unitless(18px, 30px);
+
+    @include min-width(md) {
+      margin-bottom: 30px;
+      font-size: 20px;
+
+      @include line-height-px-to-unitless(20px, 30px);
+    }
+
+    @include min-width(xl) {
+      margin-bottom: 40px;
+      font-size: 24px;
+
+      @include line-height-px-to-unitless(20px, 30px);
+    }
+  }
+
+  &__text {
+    color: #283645;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+    @include line-height-px-to-unitless(14px, 30px);
+
+    @include min-width(md) {
+      font-size: 18px;
+
+      @include line-height-px-to-unitless(18px, 35px);
+    }
+
+    @include min-width(xl) {
+      @include line-height-px-to-unitless(18px, 40px);
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+
+  @include min-width(xl) {
+    display: flex !important;
+    color: $reviews--swiper-button-xl-color;
+    transition: $reviews--swiper-button-xl-transition;
+
+    &:hover {
+      color: $reviews--swiper-button-xl-hover-color;
+    }
+  }
+}

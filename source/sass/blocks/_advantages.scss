@@ -1,0 +1,384 @@
+/* ==========================================================================
+advantages
+========================================================================== */
+
+.advantages {
+  &__inner {
+    padding-top: 35px;
+
+    @include min-width(md) {
+      overflow: hidden;
+      padding-top: 45px;
+    }
+
+    @include min-width(xl) {
+      padding-top: 60px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 30px;
+    background-color: $advantages--header-background-color;
+
+    @include min-width(md) {
+      margin-bottom: 50px;
+    }
+
+    @include min-width(xl) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__header-inner {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @include min-width(xl) {
+      padding: 0 130px;
+    }
+  }
+
+  &__header-title {
+    margin: 0;
+    color: $advantages--header-title-color;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+
+    @include line-height-px-to-unitless(24px, 30px);
+
+    &--top {
+      margin-bottom: 25px;
+
+      @include min-width(md) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include min-width(md) {
+      font-size: 40px;
+
+      @include line-height-px-to-unitless(40px, 50px);
+    }
+
+    @include min-width(xl) {
+      font-size: 50px;
+
+      @include line-height-px-to-unitless(50px, 60px);
+    }
+  }
+
+  &__main {
+    background-color: $advantages--main-background-color;
+    background-image: url(../img/svg/background-triangle-white.svg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 100% 35px;
+
+    @include min-width(xl) {
+      background-size: 100% 70px;
+    }
+  }
+
+  &__main-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 20px 40px;
+    margin: 0 auto;
+
+    @include min-width(md) {
+      overflow: hidden;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    @include min-width(xl) {
+      overflow: visible;
+      max-width: 1200px;
+      padding: 0 130px;
+    }
+  }
+
+  &__main-inner {
+    width: 100%;
+    margin-bottom: 35px;
+
+    @include min-width(xl) {
+      display: flex;
+      width: 33.3333%;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 0 30px 50px;
+      margin: 0;
+    }
+  }
+
+  &__main-top {
+    width: 100%;
+
+    @include min-width(md) {
+      width: 50%;
+      order: 2;
+      margin-top: 55px;
+      margin-left: 6%;
+    }
+
+    @include min-width(xl) {
+      position: relative;
+      left: 0;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0;
+    }
+  }
+
+  &__main-img-wrapper {
+    display: none;
+
+    @include min-width(xl) {
+      display: flex;
+      width: 186px;
+      height: 382px;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__main-img {
+    @include min-width(xl) {
+      max-width: 186px;
+      max-height: 382px;
+    }
+  }
+
+  &__main-title {
+    margin: 0;
+    margin-bottom: 15px;
+    color: $advantages--main-title-color;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+
+    @include line-height-px-to-unitless(18px, 24px);
+
+    @include min-width(md) {
+      text-align: left;
+    }
+
+    @include min-width(xl) {
+      max-width: 100%;
+      margin-bottom: 25px;
+      font-size: 30px;
+      text-align: center;
+
+      @include line-height-px-to-unitless(30px, 35px);
+    }
+  }
+
+  &__main-text {
+    margin: 0;
+    color: $advantages--main-text-color;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+    @include line-height-px-to-unitless(14px, 24px);
+
+    @include min-width(md) {
+      text-align: left;
+    }
+
+    @include min-width(xl) {
+      max-width: 100%;
+      font-size: 18px;
+      text-align: center;
+
+      @include line-height-px-to-unitless(18px, 32px);
+    }
+  }
+
+  &__main-bottom {
+    max-width: 157px;
+    max-height: 320px;
+
+    @include min-width(md) {
+      max-width: 268px;
+      max-height: 482px;
+      order: 1;
+    }
+
+    @include min-width(xl) {
+      display: none;
+    }
+  }
+
+  &__main-bottom-img {
+    max-width: 157px;
+    max-height: 320px;
+
+    @include min-width(md) {
+      max-width: 268px;
+      max-height: 547px;
+    }
+  }
+
+  &__footer {
+    display: none;
+
+    @include min-width(md) {
+      display: block;
+      background-color: $advantages--footer-background-color-md;
+    }
+
+    @include min-width(xl) {
+      background-color: $advantages--footer-background-color-xl;
+    }
+  }
+
+  &__footer-inner {
+    @include min-width(md) {
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      margin: 0 auto;
+    }
+
+    @include min-width(xl) {
+      max-width: 1200px;
+      justify-content: space-between;
+      padding: 40px 130px 60px;
+    }
+  }
+
+  &__footer-img {
+    @include min-width(md) {
+      display: flex;
+      width: 268px;
+      height: 276px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      background-image: $advantages--footer-img-background-image;
+      background-position: $advantages--footer-img-background-position;
+      background-repeat: no-repeat;
+      background-size: $advantages--footer-img-background-size;
+    }
+
+    @include min-width(xl) {
+      width: 300px;
+      height: 345px;
+      background-size: $advantages--footer-img-background-size-xl;
+    }
+  }
+
+  &__footer-img-text {
+    margin-top: 25px;
+    color: $advantages--footer-img-text-color;
+    font-family: inherit;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+
+    @include min-width(xl) {
+      margin-top: 43px;
+      font-size: 120px;
+    }
+  }
+
+  &__footer-info {
+    width: 50%;
+    margin-left: 6%;
+
+    @include min-width(xl) {
+      width: 570px;
+      margin-top: 35px;
+    }
+  }
+
+  &__footer-title {
+    margin: 0;
+    margin-bottom: 15px;
+    color: $advantages--footer-title-color;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+
+    @include line-height-px-to-unitless(30px, 36px);
+
+    @include min-width(xl) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__footer-text {
+    margin: 0;
+    margin-bottom: 15px;
+    color: $advantages--footer-text-color;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+
+    @include line-height-px-to-unitless(14px, 24px);
+
+    @include min-width(xl) {
+      margin-bottom: 25px;
+      font-size: 18px;
+
+      @include line-height-px-to-unitless(18px, 32px);
+    }
+  }
+
+  &__footer-link {
+    color: $advantages--footer-link-color;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    transition: color 0.3s ease;
+
+    @include line-height-px-to-unitless(14px, 24px);
+
+    &:hover,
+    &:focus {
+      color: $advantages--footer-link-hover-focus-color;
+      text-decoration: none;
+    }
+
+    &:active {
+      opacity: $advantages--footer-link-active-opacity;
+    }
+
+    @include min-width(xl) {
+      font-size: 18px;
+
+      @include line-height-px-to-unitless(18px, 32px);
+    }
+  }
+}

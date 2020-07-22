@@ -1,0 +1,234 @@
+/* ==========================================================================
+page-header
+========================================================================== */
+
+.page-header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: $page-header--transparent-background-color;
+  transition: transform 0.5s cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  &__inner {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include min-width(md) {
+      height: 110px;
+    }
+
+    @include min-width(xl) {
+      height: auto;
+    }
+  }
+}
+
+.page-header--hidden {
+  transform: translateY(-100%);
+}
+
+.nav-open .page-header {
+  background-color: $page-header--normal-background-color;
+}
+
+.logo-wrapper {
+  flex-shrink: 0;
+
+  @include min-width(md) {
+    padding-bottom: 10px;
+  }
+
+  @include min-width(xl) {
+    display: inline-flex;
+    height: 110px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.logo {
+  transition: opacity 0.2s ease-in-out;
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+  &__image {
+    width: 75px;
+    height: 22px;
+
+    @include min-width(md) {
+      width: 150px;
+      height: 40px;
+    }
+  }
+}
+
+.page-header__nav {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  left: 0;
+
+  @include min-width(md) {
+    top: 110px;
+  }
+
+  @include min-width(xl) {
+    position: static;
+  }
+}
+
+.main-nav {
+  background-color: inherit;
+  color: $page-header--color;
+  opacity: 0;
+  transition: visibility 0.2s ease, opacity 0.2s ease;
+  visibility: hidden;
+
+  @include min-width(xl) {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__list {
+    display: flex;
+    height: calc(100vh - 65px);
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 12px;
+    border-top: 1px solid #fff;
+    margin: 0;
+    list-style: none;
+
+    @include min-width(md) {
+      height: calc(100vh - 110px);
+      flex-flow: row wrap;
+      align-content: flex-start;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    @include min-width(xl) {
+      width: 600px;
+      height: auto;
+      align-content: center;
+      justify-content: flex-end;
+      padding: 0;
+      border-top: 0;
+    }
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    padding: 7px 15px;
+    color: $page-header--link-color;
+    font-size: 18px;
+    font-weight: $page-header--link-font-weight;
+    letter-spacing: $page-header--link-letter-spacing;
+    text-decoration: $page-header--link-text-decoration;
+    text-transform: $page-header--link-text-transform;
+    transition: color 0.15s ease-out;
+
+    &:hover:not(.main-nav__link--active) {
+      color: $page-header--link-hover-color;
+    }
+
+    @include min-width(xl) {
+      padding: 7px 20px;
+      text-transform: $page-header--link-xl-text-transform;
+    }
+
+    &--active {
+      color: $page-header--link-active-color;
+    }
+  }
+}
+
+.nav-toggle {
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  border: $page-header--nav-toggle-border;
+  margin-left: auto;
+  background: $page-header--nav-toggle-background;
+  cursor: pointer;
+
+  @include min-width(xl) {
+    display: none;
+  }
+}
+
+.nav-open .main-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 50px;
+  height: 3px;
+  background-color: $page-header--hamburger-background;
+  border-radius: 1em;
+  transition: background-color 0.15s ease-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  content: '';
+}
+
+.hamburger::before {
+  top: 9px;
+}
+
+.hamburger::after {
+  bottom: 9px;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-9px);
+}
+
+.nav-open .hamburger::after {
+  display: none;
+}
+
+.nav-open .hamburger,
+.nav-open .hamburger::before,
+.nav-open .hamburger::after {
+  background-color: $page-header--hamburger-active-background;
+}
+
+.content-wrapper--hidden {
+  display: none;
+}

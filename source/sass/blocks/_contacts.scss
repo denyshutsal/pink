@@ -1,0 +1,136 @@
+/* ==========================================================================
+contacts
+========================================================================== */
+
+.contacts {
+  padding: 40px 0 20px;
+  background-color: $contacts--background-color;
+
+  @include min-width(md) {
+    padding-top: 55px;
+  }
+
+  @include min-width(xl) {
+    padding-top: 65px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    color: $contacts--title-color;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+
+    @include line-height-px-to-unitless(24px, 30px);
+
+    @include min-width(md) {
+      margin-bottom: 55px;
+      font-size: 40px;
+
+      @include line-height-px-to-unitless(40px, 50px);
+    }
+
+    @include min-width(xl) {
+      font-size: 50px;
+
+      @include line-height-px-to-unitless(50px, 60px);
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include min-width(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+    @include min-width(xl) {
+      justify-content: space-around;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 20px;
+
+    @include min-width(md) {
+      width: 255px;
+      flex-shrink: 0;
+      margin-bottom: 45px;
+    }
+
+    @include min-width(xl) {
+      width: 30%;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__wrapper--3 {
+    @include min-width(xl) {
+      order: 2;
+    }
+  }
+
+  &__wrapper--2 {
+    @include min-width(xl) {
+      order: 3;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 5px;
+    color: $contacts--text-color;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 800;
+
+    @include line-height-px-to-unitless(18px, 24px);
+
+    @include min-width(xl) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text2 {
+    margin: 0;
+    color: $contacts--text2-color;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 300;
+
+    @include line-height-px-to-unitless(24px, 28px);
+  }
+
+  &__link {
+    margin: 0;
+    color: $contacts--link-color;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    @include line-height-px-to-unitless(24px, 30px);
+
+    &:focus,
+    &:hover {
+      color: $contacts--link-focus-hover-color;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $contacts--link-active-color;
+      opacity: $contacts--link-active-opacity;
+    }
+  }
+}
