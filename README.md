@@ -1,4 +1,4 @@
-# Проект «Пинк»
+# «Пинк»
 
 [Демо проекта](https://denyshutsal.github.io/pink/)
 
