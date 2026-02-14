@@ -1,4 +1,4 @@
-# Pink-landing-page
+# Pink (landing page)
 
 [GitHub Pages link](https://denyshutsal.github.io/pink/)
 
