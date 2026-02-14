@@ -1,6 +1,6 @@
-# «Пинк»
+# Pink-landing-page
 
-[Демо проекта](https://denyshutsal.github.io/pink/)
+[GitHub Pages link](https://denyshutsal.github.io/pink/)
 
 ---
 
