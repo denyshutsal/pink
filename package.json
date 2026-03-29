@@ -73,7 +73,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "lint-staged": "^10.2.9",
     "loading-attribute-polyfill": "^1.5.4",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prettier": "2.0.5",
     "snazzy": "^8.0.0",
     "stylelint": "^13.5.0",
